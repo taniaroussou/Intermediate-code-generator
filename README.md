@@ -88,5 +88,5 @@ Execute the produced LLVM IR files in order to see that their output is the same
 - ```./out1```
 
 ## Run
-```java [MainClassName] [file1.java] [file2.java] ... [fileN.java]```
+```java Main.java [file1.java] [file2.java] ... [fileN.java]```
 The program compiles to LLVM IR all .java files given as arguments. Moreover, the outputs is stored in files named file1.ll, file2.ll, ... fileN.ll respectively.
