@@ -47,7 +47,7 @@ Example: ```br label %goto```
 - ```label```: declares a label with the given name. The instruction before declaring a label needs to be a ```br`` operation, even if that ```br``` is simply a jump to the label.
 Example: ```label123:```
 
-- ```bitcast```` is used to cast between different pointer types. It takes the value and type to be cast, and the type that it will be cast to.
+- ```bitcast``` is used to cast between different pointer types. It takes the value and type to be cast, and the type that it will be cast to.
 Example: ```%ptr = bitcast i32* %ptr2 to i8**```
 
 - ```getelementptr``` is used to get the pointer to an element of an array from a pointer to that array and the index of the element. The result is also a pointer to the type that is passed as the first parameter (in the case below it's an ```i8*```). This example is like doing ```ptr_idx = &ptr[idx]``` in C (you still need to do a ```load``` to get the actual value at that position). The first argument is always a type used as the basis for the calculations.
